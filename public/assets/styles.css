@@ -11,7 +11,7 @@ body {
     width: 95%;
     background: #090d13;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25em;
     box-sizing: border-box;
 }
 
@@ -121,4 +121,26 @@ li:hover>.close {
     border: 1px solid #000;
     background-color: antiquewhite;
     border-radius: 2em;
+}
+
+@media (max-width: 35em) {
+    #todo-table {
+        width: 100%;
+        padding: .8em;
+
+    }
+
+    input[type='text'] {
+        flex: 2;
+        padding: .2em;
+    }
+
+    .submit {
+        flex: 1;
+        font-size: 14px;
+        padding: .2em;
+    }
+    ul>li {
+        font-size: 1rem;
+    }
 }
